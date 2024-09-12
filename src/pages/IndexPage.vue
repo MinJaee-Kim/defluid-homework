@@ -12,7 +12,7 @@
             srcset="../img/ellipse@2x.png 2x, ../img/ellipse@3x.png 3x"
             class="Ellipse"
           />
-          <span class="Sed-ut-perspiciatis"> Sed ut perspiciatis </span>
+          <span class="Sed-ut-perspiciatis"> Sed ut perspiciatis <br /></span>
           <span
             class="Nemo-enim-ipsam-voluptatem-quia-voluptas-sit-aspernatur-aut-odit-aut-fugit-sed-quia-consequuntur-ma"
           >
@@ -23,6 +23,14 @@
           <span class="Learn-more"> Learn more </span>
         </div>
       </div>
+    </div>
+
+    <div class="Section-2">
+      <img
+        src="../img/rectangle.png"
+        srcset="img/rectangle@2x.png 2x, img/rectangle@3x.png 3x"
+        class="Rectangle"
+      />
     </div>
 
     <!-- <q-page class="row items-center justify-evenly">

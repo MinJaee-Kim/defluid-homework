@@ -80,7 +80,6 @@ img.Ellipse {
   text-align: left;
   color: rgba(0, 0, 0, 0.8);
 }
-
 .Learn-more {
   width: 493px;
   height: 30px;
@@ -95,4 +94,19 @@ img.Ellipse {
   letter-spacing: -0.27px;
   text-align: left;
   color: #18a0fb;
+}
+.Section-2 {
+  width: 1680px;
+  height: 740px;
+  margin: 110px 0 0;
+  padding: 152px 80px;
+  background-color: #fff;
+}
+img.Rectangle {
+  width: 1680px;
+  height: 740px;
+  margin: 110px 0 0;
+  padding: 152px 80px;
+  object-fit: contain;
+  background-color: rgba(0, 0, 0, 0.5);
 }

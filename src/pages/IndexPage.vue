@@ -1,18 +1,28 @@
 <template>
-  <q-page class="row items-center justify-evenly">
-    <example-component
-      title="Example component"
-      active
-      :todos="todos"
-      :meta="meta"
-    ></example-component>
-  </q-page>
+  <div class="Rectangle-3">
+    <span class="Snap-photos-and-share-like-never-before">
+      Snap photos and share like never before
+    </span>
+
+    <q-page class="row items-center justify-evenly">
+      <example-component
+        title="Example component"
+        active
+        :todos="todos"
+        :meta="meta"
+      ></example-component>
+      <card-component
+        lorem=""
+      ></card-component>
+    </q-page>
+  </div>
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue';
 import { Todo, Meta } from 'components/models';
 import ExampleComponent from 'components/ExampleComponent.vue';
+import CardComponent from 'components/CardComponent.vue';
 
 defineOptions({
   name: 'IndexPage'

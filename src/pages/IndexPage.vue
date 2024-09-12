@@ -4,10 +4,17 @@
       Snap photos and share like never before
     </span>
 
+    <div class="Group">
+      <img
+        src="img/ellipse.png"
+        srcset="img/ellipse@2x.png 2x, img/ellipse@3x.png 3x"
+        class="Ellipse"
+      />
+      <span class="Sed-ut-perspiciatis"> Sed ut perspiciatis </span>
+    </div>
+
     <q-page class="row items-center justify-evenly">
-      <card-component
-        lorem=""
-      ></card-component>
+      <card-component lorem=""></card-component>
     </q-page>
   </div>
 </template>

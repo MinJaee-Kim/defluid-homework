@@ -13,17 +13,12 @@
             class="Ellipse"
           />
         </div>
-        <span class="User-Title"> Sed ut perspiciatis </span>
-        <div>
-          <span class="User-Word">
-            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-            fugit, sed quia consequuntur magni dolores eos qui ratione
-            voluptatem.
-          </span>
+        <div class="User-Title"></div>
+        <div class="User-Word">
+          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+          fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.
         </div>
-        <div>
-          <span class="Learn-more"> Learn more </span>
-        </div>
+        <div class="Learn-more">Learn more</div>
       </div>
       <div class="Group">
         <div class="Ellipse">
@@ -33,17 +28,12 @@
             class="Ellipse"
           />
         </div>
-        <span class="User-Title"> Sed ut perspiciatis </span>
-        <div>
-          <span class="User-Word">
-            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-            fugit, sed quia consequuntur magni dolores eos qui ratione
-            voluptatem.
-          </span>
+        <div class="User-Title">Sed ut perspiciatis</div>
+        <div class="User-Word">
+          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+          fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.
         </div>
-        <div>
-          <span class="Learn-more"> Learn more </span>
-        </div>
+        <div class="Learn-more">Learn more</div>
       </div>
       <div class="Group">
         <div class="Ellipse">
@@ -53,17 +43,12 @@
             class="Ellipse"
           />
         </div>
-        <span class="User-Title"> Sed ut perspiciatis </span>
-        <div>
-          <span class="User-Word">
-            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-            fugit, sed quia consequuntur magni dolores eos qui ratione
-            voluptatem.
-          </span>
+        <div class="User-Title">Sed ut perspiciatis</div>
+        <div class="User-Word">
+          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+          fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.
         </div>
-        <div>
-          <span class="Learn-more"> Learn more </span>
-        </div>
+        <div class="Learn-more">Learn more</div>
       </div>
     </div>
     <!-- 유저 -->

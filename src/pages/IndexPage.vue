@@ -13,7 +13,7 @@
             class="Ellipse"
           />
         </div>
-        <div class="User-Title"></div>
+        <div class="User-Title">Sed ut perspiciatis</div>
         <div class="User-Word">
           Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
           fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.

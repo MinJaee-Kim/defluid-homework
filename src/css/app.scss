@@ -293,13 +293,73 @@
   margin: 15px 0 15px;
   background-color: #000;
 }
-.Rectangle-6 {
+.Location-Group {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+.Location-Box {
   width: 400px;
-  height: 415px;
   flex-grow: 0;
   margin: 68px 40px 0 80px;
   padding: 15px 20px 23px;
-  opacity: 0.5;
   border-radius: 10px;
   background-color: #d9d9d9;
+}
+.Location-Align {
+  display: flex;
+  justify-content: space-between;
+}
+.Location-Title {
+  width: 79px;
+  height: 20px;
+  flex-grow: 0;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.24px;
+  text-align: left;
+  color: #000;
+}
+.Location-Value {
+  width: 30px;
+  height: 20px;
+  flex-grow: 0;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.24px;
+  text-align: right;
+  color: #000;
+}
+.Location-Image {
+  width: 360px;
+  height: 227.1px;
+  flex-grow: 0;
+  margin: 9px 0 19.9px;
+  object-fit: contain;
+  border-radius: 5px;
+}
+.Location-Description {
+  width: 357px;
+  height: 101px;
+  flex-grow: 0;
+  margin: 19.9px 0 0 3px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.21px;
+  text-align: left;
+  color: #000;
 }

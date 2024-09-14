@@ -96,10 +96,47 @@
         </div>
       </div>
     </div>
-    <div>
-      <div class="Rectangle-6"></div>
-    </div>
     <!-- 정렬 박스 -->
+    <div class="Location-Group">
+      <div class="Location-Box">
+        <div class="Location-Align">
+          <span class="Location-Title"> Italy, Pica </span
+          ><span class="Location-Value"> 1173 </span>
+        </div>
+        <img
+          src="../img/image.png"
+          srcset="img/image@2x.png 2x, img/image@3x.png 3x"
+          class="Location-Image"
+        />
+        <span class="Location-Description">
+          The Leaning Tower of Pisa, or simply the Tower of Pisa (torre di
+          Pisa), is the campanile, or freestanding bell tower, of Pisa
+          Cathedral. It is known for its nearly four-degree lean, the result of
+          an unstable foundation. The tower is one of three structures in the
+          Pisa's Cathedral Square (Piazza del Duomo), which includes the
+          cathedral and Pisa Baptistry.
+        </span>
+      </div>
+      <div class="Location-Box">
+        <div class="Location-Align">
+          <span class="Location-Title"> Italy, Pica </span
+          ><span class="Location-Value"> 1173 </span>
+        </div>
+        <img
+          src="../img/image.png"
+          srcset="img/image@2x.png 2x, img/image@3x.png 3x"
+          class="Location-Image"
+        />
+        <span class="Location-Description">
+          The Leaning Tower of Pisa, or simply the Tower of Pisa (torre di
+          Pisa), is the campanile, or freestanding bell tower, of Pisa
+          Cathedral. It is known for its nearly four-degree lean, the result of
+          an unstable foundation. The tower is one of three structures in the
+          Pisa's Cathedral Square (Piazza del Duomo), which includes the
+          cathedral and Pisa Baptistry.
+        </span>
+      </div>
+    </div>
 
     <!-- <img
       src="../img/rectangle.png"

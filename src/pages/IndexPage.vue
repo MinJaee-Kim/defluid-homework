@@ -1,6 +1,6 @@
 <template>
   <div class="Screen">
-    <div class="Rectangle-3">
+    <div class="Title">
       <span class="Word-1"> Snap photos and share like never before </span>
     </div>
     <!-- 머리 -->

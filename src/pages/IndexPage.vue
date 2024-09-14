@@ -96,6 +96,11 @@
         </div>
       </div>
     </div>
+    <div>
+      <div class="Rectangle-6"></div>
+    </div>
+    <!-- 정렬 박스 -->
+
     <!-- <img
       src="../img/rectangle.png"
       srcset="../img/rectangle@2x.png 2x, ../img/rectangle@3x.png 3x"

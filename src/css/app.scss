@@ -217,3 +217,84 @@
   text-align: left;
   color: #000;
 }
+.Frame-1 {
+  width: 408px;
+  height: 50px;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5px;
+  margin: 251px 20px 0 0px;
+  padding: 5px;
+  border-radius: 25px;
+  border: solid 1px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+}
+.Align-Location {
+  display: flex;
+  justify-content: center;
+  width: 64px;
+  height: 40px;
+  flex-grow: 0;
+  margin: 0 5px 0 0;
+  border-radius: 25px;
+  background-color: #000;
+}
+.AlignBox {
+  display: flex;
+  flex-direction: row;
+}
+.All {
+  flex-grow: 0;
+  margin: 0 5px 0 0;
+  font-family: Exo2;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.24px;
+  text-align: center;
+  align-content: center;
+  color: #fff;
+}
+.Frame-2 {
+  display: flex;
+  width: 408px;
+  height: 50px;
+  flex-grow: 0;
+  margin: 251px 764px 0 20px;
+  padding: 5px;
+  border-radius: 25px;
+  border: solid 1px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+}
+.Number-Align {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  flex-grow: 0;
+  border-radius: 25px;
+  background-color: #000;
+  justify-content: center;
+}
+.Number {
+  font-family: Exo2;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.21px;
+  text-align: center;
+  align-content: center;
+  color: #fff;
+}
+.Countour {
+  width: 115px;
+  height: 10px;
+  margin: 15px 0 15px;
+  background-color: #000;
+}

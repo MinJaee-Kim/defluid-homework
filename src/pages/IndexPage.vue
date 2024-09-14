@@ -80,6 +80,21 @@
     <!-- 이미지 박스 -->
     <div class="Section-2">
       <div class="Word-2">Duis tincidunt ut ligula vitae mollis.</div>
+      <div class="AlignBox">
+        <div class="Frame-1">
+          <div class="Align-Location"><span class="All"> All </span></div>
+          <div class="Align-Location"><span class="All"> All </span></div>
+        </div>
+        <div class="Frame-2">
+          <div class="Number-Align">
+            <div class="Number">1000</div>
+          </div>
+          <div class="Countour"></div>
+          <div class="Number-Align">
+            <div class="Number">1000</div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- <img
       src="../img/rectangle.png"

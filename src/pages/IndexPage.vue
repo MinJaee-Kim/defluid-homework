@@ -77,6 +77,10 @@
       <div class="Box-Word5">Subscribe to our newsletter</div>
       <div class="Text-Box"></div>
     </div>
+    <!-- 이미지 박스 -->
+    <div class="Section-2">
+      <div class="Word-2">Duis tincidunt ut ligula vitae mollis.</div>
+    </div>
     <!-- <img
       src="../img/rectangle.png"
       srcset="../img/rectangle@2x.png 2x, ../img/rectangle@3x.png 3x"

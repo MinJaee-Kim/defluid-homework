@@ -4,14 +4,6 @@ import { ref } from 'vue';
 // import ExampleComponent from 'components/ExampleComponent.vue';
 // import CardComponent from 'components/CardComponent.vue';
 
-// interface User {
-//   index: number;
-//   image: string;
-//   srcset: string;
-//   title: string;
-//   detail: string;
-// }
-
 export default {
   setup() {
     const UserDetail = ref([

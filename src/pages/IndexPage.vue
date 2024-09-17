@@ -1,5 +1,6 @@
 <script lang="ts">
 import { ref } from 'vue';
+import { api } from 'boot/axios';
 // import { Todo, Meta } from 'components/models';
 // import ExampleComponent from 'components/ExampleComponent.vue';
 // import CardComponent from 'components/CardComponent.vue';

@@ -59,11 +59,7 @@ export default {
     <div class="Section-1">
       <div v-for="user in UserDetail" :key="user.index" class="Group">
         <div class="Ellipse">
-          <img
-            src="../img/ellipse.png"
-            srcset="img/ellipse@2x.png 2x, img/ellipse@3x.png 3x"
-            class="Ellipse"
-          />
+          <img src="../img/ellipse.png" :srcset="user.srcset" class="Ellipse" />
         </div>
         <div class="User-Title">{{ user.title }}</div>
         <div class="User-Word">

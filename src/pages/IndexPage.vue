@@ -1,3 +1,63 @@
+<script lang="ts">
+import { ref } from 'vue';
+// import { Todo, Meta } from 'components/models';
+// import ExampleComponent from 'components/ExampleComponent.vue';
+// import CardComponent from 'components/CardComponent.vue';
+
+// interface User {
+//   index: number;
+//   image: string;
+//   srcset: string;
+//   title: string;
+//   detail: string;
+// }
+
+export default {
+  setup() {
+    const UserDetail = ref([
+      {
+        index: 1,
+        image: '../img/ellipse.png',
+        srcset: 'img/ellipse@2x.png 2x, img/ellipse@3x.png 3x',
+        title: 'Sed ut perspiciatis',
+        detail:
+          'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.'
+      },
+      {
+        index: 2,
+        image: '../img/ellipse.png',
+        srcset: 'img/ellipse@2x.png 2x, img/ellipse@3x.png 3x',
+        title: 'Lorem ipsum dolor',
+        detail:
+          'Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.'
+      },
+      {
+        index: 3,
+        image: '../img/ellipse.png',
+        srcset: 'img/ellipse@2x.png 2x, img/ellipse@3x.png 3x',
+        title: 'Nemo enim ipsam',
+        detail:
+          'Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor.'
+      }
+    ]);
+
+    const mixing = () => {
+      for (let i = 0; i < UserDetail.value.length; i++) {
+        let RandomNumber = Math.floor(Math.random() * UserDetail.value.length);
+        let store = UserDetail.value[0];
+        UserDetail.value[0] = UserDetail.value[RandomNumber];
+        UserDetail.value[RandomNumber] = store;
+      }
+    };
+
+    mixing();
+    return {
+      UserDetail
+    };
+  }
+};
+</script>
+
 <template>
   <div class="Screen">
     <div class="Title">
@@ -5,7 +65,7 @@
     </div>
     <!-- 머리 -->
     <div class="Section-1">
-      <div class="Group">
+      <div v-for="user in UserDetail" :key="user.index" class="Group">
         <div class="Ellipse">
           <img
             src="../img/ellipse.png"
@@ -13,40 +73,9 @@
             class="Ellipse"
           />
         </div>
-        <div class="User-Title">Sed ut perspiciatis</div>
+        <div class="User-Title">{{ user.title }}</div>
         <div class="User-Word">
-          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-          fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.
-        </div>
-        <div class="Learn-more">Learn more</div>
-      </div>
-      <div class="Group">
-        <div class="Ellipse">
-          <img
-            src="../img/ellipse.png"
-            srcset="../img/ellipse@2x.png 2x, ../img/ellipse@3x.png 3x"
-            class="Ellipse"
-          />
-        </div>
-        <div class="User-Title">Sed ut perspiciatis</div>
-        <div class="User-Word">
-          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-          fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.
-        </div>
-        <div class="Learn-more">Learn more</div>
-      </div>
-      <div class="Group">
-        <div class="Ellipse">
-          <img
-            src="../img/ellipse.png"
-            srcset="../img/ellipse@2x.png 2x, ../img/ellipse@3x.png 3x"
-            class="Ellipse"
-          />
-        </div>
-        <div class="User-Title">Sed ut perspiciatis</div>
-        <div class="User-Word">
-          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-          fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.
+          {{ user.detail }}
         </div>
         <div class="Learn-more">Learn more</div>
       </div>
@@ -149,14 +178,3 @@
       <card-component lorem=""></card-component>
     </q-page> -->
 </template>
-
-<script setup lang="ts">
-// import { ref } from 'vue';
-// import { Todo, Meta } from 'components/models';
-// import ExampleComponent from 'components/ExampleComponent.vue';
-// import CardComponent from 'components/CardComponent.vue';
-
-defineOptions({
-  name: 'IndexPage'
-});
-</script>

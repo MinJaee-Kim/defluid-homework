@@ -33,6 +33,7 @@ export default {
           'Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor.'
       }
     ]);
+    const PhotoData = ref();
 
     const mixing = () => {
       for (let i = 0; i < UserDetail.value.length; i++) {
@@ -43,6 +44,24 @@ export default {
       }
     };
 
+    const data = async () => {
+      const photo = await api({
+        method: 'get',
+        url: '/photos/random',
+        params: {
+          client_id: import.meta.env.VITE_API_ACCESS_KEY,
+          Secret_key: import.meta.env.VITE_API_SECRET_KEY
+        }
+      }).catch((e) => {
+        console.log(e);
+      });
+
+      PhotoData.value = photo?.data.urls.full;
+
+      console.log(PhotoData.value);
+    };
+
+    data();
     mixing();
     return {
       UserDetail

@@ -44,27 +44,34 @@ export default {
       }
     };
 
-    const data = async () => {
-      const photo = await api({
-        method: 'get',
-        url: '/photos/random',
-        params: {
-          client_id: import.meta.env.VITE_API_ACCESS_KEY,
-          Secret_key: import.meta.env.VITE_API_SECRET_KEY
-        }
-      }).catch((e) => {
-        console.log(e);
-      });
+    const setPhoto = async () => {
+      let date = new Date();
+      date.setDate(date.getDate() + 1);
+      if (!document.cookie) {
+        const photo = await api({
+          method: 'get',
+          url: '/photos/random',
+          params: {
+            client_id: import.meta.env.VITE_API_ACCESS_KEY,
+            Secret_key: import.meta.env.VITE_API_SECRET_KEY
+          }
+        }).catch((e) => {
+          console.log(e);
+        });
 
-      PhotoData.value = photo?.data.urls.full;
-
-      console.log(PhotoData.value);
+        document.cookie =
+          'url=' + photo?.data.urls.full + '; expires=' + date.toUTCString();
+        PhotoData.value = photo?.data.urls.full;
+      } else {
+        PhotoData.value = document.cookie.split(';')[0].substring(4);
+      }
     };
 
-    data();
+    setPhoto();
     mixing();
     return {
-      UserDetail
+      UserDetail,
+      PhotoData
     };
   }
 };
@@ -89,7 +96,10 @@ export default {
       </div>
     </div>
     <!-- 유저 -->
-    <div class="Image-Box">
+    <div
+      class="Image-Box"
+      :style="{ backgroundImage: 'url(' + PhotoData + ')' }"
+    >
       <div class="Box-Word1">Sed ut perspiciatis unde omnis</div>
       <div class="Box-Word2">
         There are many variations of passages of Lorem Ipsum available, but the

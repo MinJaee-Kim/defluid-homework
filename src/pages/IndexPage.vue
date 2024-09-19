@@ -10,7 +10,7 @@ export default {
     const UserDetail = ref([
       {
         index: 1,
-        image: '../img/ellipse.png',
+        image: 'src/img/ellipse.png',
         srcset: 'img/ellipse@2x.png 2x, img/ellipse@3x.png 3x',
         title: 'Sed ut perspiciatis',
         detail:
@@ -18,59 +18,59 @@ export default {
       },
       {
         index: 2,
-        image: '../img/ellipse.png',
-        srcset: 'img/ellipse@2x.png 2x, img/ellipse@3x.png 3x',
+        image: 'src/img/ellipse2.png',
+        srcset: 'img/ellipse2@2x.png 2x, img/ellipse2@3x.png 3x',
         title: 'Lorem ipsum dolor',
         detail:
           'Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.'
       },
       {
         index: 3,
-        image: '../img/ellipse.png',
-        srcset: 'img/ellipse@2x.png 2x, img/ellipse@3x.png 3x',
+        image: 'src/img/ellipse3.png',
+        srcset: 'img/ellipse3@2x.png 2x, img/ellipse3@3x.png 3x',
         title: 'Nemo enim ipsam',
         detail:
           'Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor.'
       }
     ]);
-    const PlaceDetail = ref([
-      {
-        index: 1,
-        image: '../img/ellipse.png',
-        srcset: 'img/ellipse@2x.png 2x, img/ellipse@3x.png 3x',
-        title: 'Italy, Pica',
-        year: 1173,
-        detail:
-          "The Leaning Tower of Pisa, or simply the Tower of Pisa (torre di Pisa), is the campanile, or freestanding bell tower, of Pisa Cathedral. It is known for its nearly four-degree lean, the result of an unstable foundation. The tower is one of three structures in the Pisa's Cathedral Square (Piazza del Duomo), which includes the cathedral and Pisa Baptistry."
-      },
-      {
-        index: 2,
-        image: '../img/ellipse.png',
-        srcset: 'img/ellipse@2x.png 2x, img/ellipse@3x.png 3x',
-        title: 'Spain, Sagrada Família',
-        year: 1882,
-        detail:
-          'The Basílica i Temple Expiatori de la Sagrada Família, otherwise known as Sagrada Família, is a church under construction in the Eixample district of Barcelona, Catalonia, Spain. It is the largest unfinished Catholic church in the world. Designed by Catalan architect Antoni Gaudí (1852–1926), in 2005 his work on Sagrada Família was added to an existing (1984) UNESCO World Heritage Site, "Works of Antoni Gaudí". On 7 November 2010, Pope Benedict XVI consecrated the church and proclaimed it a minor basilica.'
-      },
-      {
-        index: 3,
-        image: '../img/ellipse.png',
-        srcset: 'img/ellipse@2x.png 2x, img/ellipse@3x.png 3x',
-        title: 'US, Fallingwater',
-        year: 1935,
-        detail:
-          "Fallingwater is a house designed by the architect Frank Lloyd Wright in 1935. Situated in the Mill Run section of Stewart township, in the Laurel Highlands of southwest Pennsylvania, about 70 miles (110 km) southeast of Pittsburgh in the United States, it is built partly over a waterfall on the Bear Run river. The house was designed to serve as a weekend retreat for Liliane and Edgar J. Kaufmann, the owner of Pittsburgh's Kaufmann's Department Store."
-      },
-      {
-        index: 4,
-        image: '../img/ellipse.png',
-        srcset: 'img/ellipse@2x.png 2x, img/ellipse@3x.png 3x',
-        title: "Russia, Saint Basil's Cathedral",
-        year: 1561,
-        detail:
-          "The Cathedral of Vasily the Blessed (Russian: Собор Василия Блаженного, romanized: Sobor Vasiliya Blazhennogo), known in English as Saint Basil's Cathedral, is an Orthodox church in Red Square of Moscow, and is one of the most popular cultural symbols of Russia."
-      }
-    ]);
+    // const PlaceDetail = ref([
+    //   {
+    //     index: 1,
+    //     image: '../img/ellipse.png',
+    //     srcset: 'img/ellipse@2x.png 2x, img/ellipse@3x.png 3x',
+    //     title: 'Italy, Pica',
+    //     year: 1173,
+    //     detail:
+    //       "The Leaning Tower of Pisa, or simply the Tower of Pisa (torre di Pisa), is the campanile, or freestanding bell tower, of Pisa Cathedral. It is known for its nearly four-degree lean, the result of an unstable foundation. The tower is one of three structures in the Pisa's Cathedral Square (Piazza del Duomo), which includes the cathedral and Pisa Baptistry."
+    //   },
+    //   {
+    //     index: 2,
+    //     image: '../img/ellipse.png',
+    //     srcset: 'img/ellipse@2x.png 2x, img/ellipse@3x.png 3x',
+    //     title: 'Spain, Sagrada Família',
+    //     year: 1882,
+    //     detail:
+    //       'The Basílica i Temple Expiatori de la Sagrada Família, otherwise known as Sagrada Família, is a church under construction in the Eixample district of Barcelona, Catalonia, Spain. It is the largest unfinished Catholic church in the world. Designed by Catalan architect Antoni Gaudí (1852–1926), in 2005 his work on Sagrada Família was added to an existing (1984) UNESCO World Heritage Site, "Works of Antoni Gaudí". On 7 November 2010, Pope Benedict XVI consecrated the church and proclaimed it a minor basilica.'
+    //   },
+    //   {
+    //     index: 3,
+    //     image: '../img/ellipse.png',
+    //     srcset: 'img/ellipse@2x.png 2x, img/ellipse@3x.png 3x',
+    //     title: 'US, Fallingwater',
+    //     year: 1935,
+    //     detail:
+    //       "Fallingwater is a house designed by the architect Frank Lloyd Wright in 1935. Situated in the Mill Run section of Stewart township, in the Laurel Highlands of southwest Pennsylvania, about 70 miles (110 km) southeast of Pittsburgh in the United States, it is built partly over a waterfall on the Bear Run river. The house was designed to serve as a weekend retreat for Liliane and Edgar J. Kaufmann, the owner of Pittsburgh's Kaufmann's Department Store."
+    //   },
+    //   {
+    //     index: 4,
+    //     image: '../img/ellipse.png',
+    //     srcset: 'img/ellipse@2x.png 2x, img/ellipse@3x.png 3x',
+    //     title: "Russia, Saint Basil's Cathedral",
+    //     year: 1561,
+    //     detail:
+    //       "The Cathedral of Vasily the Blessed (Russian: Собор Василия Блаженного, romanized: Sobor Vasiliya Blazhennogo), known in English as Saint Basil's Cathedral, is an Orthodox church in Red Square of Moscow, and is one of the most popular cultural symbols of Russia."
+    //   }
+    // ]);
     const PhotoData = ref();
 
     const mixing = () => {
@@ -124,7 +124,7 @@ export default {
     <div class="Section-1">
       <div v-for="user in UserDetail" :key="user.index" class="Group">
         <div class="Ellipse">
-          <img src="../img/ellipse.png" :srcset="user.srcset" class="Ellipse" />
+          <img :src="user.image" :srcset="user.srcset" class="Ellipse" />
         </div>
         <div class="User-Title">{{ user.title }}</div>
         <div class="User-Word">

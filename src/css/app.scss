@@ -287,6 +287,10 @@
   margin: 15px 0 15px;
   background-color: #000;
 }
+.Location-Area {
+  height: 600px;
+  border-radius: 10px;
+}
 .Location-Group {
   display: flex;
   flex-direction: row;
@@ -344,7 +348,7 @@
 }
 .Location-Description {
   flex-grow: 0;
-  margin: 19.9px 0 0 3px;
+  margin: 0px 0 0 3px;
   font-family: Montserrat;
   font-size: 14px;
   font-weight: normal;

@@ -110,7 +110,26 @@ export default {
     return {
       UserDetail,
       PhotoData,
-      PlaceDetails
+      PlaceDetails,
+      thumbStyle: {
+        right: '5px',
+        borderRadius: '8px',
+        backgroundColor: '#027be3',
+        width: '8px',
+        opacity: 0.75
+      },
+
+      barStyle: {
+        right: '2px',
+        borderRadius: '14px',
+        backgroundColor: '#027be3',
+        width: '14px',
+        opacity: 0.2,
+        marginTop: '-3px',
+        marginBottom: '-3px',
+        paddingTop: '3px',
+        paddingBottom: '3px'
+      }
     };
   }
 };
@@ -183,28 +202,30 @@ export default {
       </div>
     </div>
     <!-- 정렬 박스 -->
-    <q-virtual-scroll
-      :items="PlaceDetails"
-      virtual-scroll-horizontal
-      v-slot="{ item }"
-    >
-      <div class="Location-Group">
-        <div class="Location-Box">
-          <div class="Location-Align">
-            <span class="Location-Title"> {{ item.title }} </span
-            ><span class="Location-Value"> {{ item.year }} </span>
+    <q-scroll-area class="Location-Area" id="scroll-area-with-virtual-scroll-1">
+      <q-virtual-scroll
+        :items="PlaceDetails"
+        virtual-scroll-horizontal
+        v-slot="{ item }"
+      >
+        <div class="Location-Group">
+          <div class="Location-Box">
+            <div class="Location-Align">
+              <span class="Location-Title"> {{ item.title }} </span
+              ><span class="Location-Value"> {{ item.year }} </span>
+            </div>
+            <img
+              src="../img/image.png"
+              srcset="img/image@2x.png 2x, img/image@3x.png 3x"
+              class="Location-Image"
+            />
+            <span class="Location-Description">
+              {{ item.detail }}
+            </span>
           </div>
-          <img
-            src="../img/image.png"
-            srcset="img/image@2x.png 2x, img/image@3x.png 3x"
-            class="Location-Image"
-          />
-          <span class="Location-Description">
-            {{ item.detail }}
-          </span>
         </div>
-      </div>
-    </q-virtual-scroll>
+      </q-virtual-scroll>
+    </q-scroll-area>
 
     <!-- <img
       src="../img/rectangle.png"

@@ -346,6 +346,12 @@ export default {
           </div>
         </div>
       </q-virtual-scroll>
+      <div
+        class="Title"
+        :style="{ display: FilterPlaceDetails.length ? 'none' : 'block' }"
+      >
+        <span class="Word-1"> Sorry, No item found. </span>
+      </div>
     </q-scroll-area>
   </div>
 </template>

@@ -39,7 +39,7 @@ export default {
       { label: 'Oceania', value: 'Oceania' }
     ]);
     const email = ref('');
-    const checkEmail = ref(true);
+    const checkEmail = ref('none');
     const year = ref(1000);
     const PlaceDetails = ref([
       {
@@ -109,6 +109,14 @@ export default {
       }
     };
 
+    const checkEmailRegex = () => {
+      let pattern = new RegExp(
+        '^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$'
+      );
+
+      checkEmail.value = pattern.test(email.value) ? 'true' : 'false';
+    };
+
     const alignCard = (card: string) => {
       saveCardData.value = card;
       if (card == 'All') {
@@ -163,7 +171,8 @@ export default {
       checkEmail,
       year,
       alignCard,
-      setYearAndAlignCard
+      setYearAndAlignCard,
+      checkEmailRegex
     };
   }
 };
@@ -217,20 +226,25 @@ export default {
       <div class="Text-Box">
         <q-input
           v-model="email"
-          @keyup.enter="email = ''"
+          @keyup.enter="checkEmailRegex"
           placeholder="Enter User Email"
           :dense="true"
         >
           <template v-slot:append>
             <q-icon
               name="send"
-              @click="email = ''"
+              @click="checkEmailRegex"
               color="grey"
               class="cursor-pointer"
             />
           </template>
         </q-input>
-        <div class="Alert-Message" :class="{ 'Display-None': checkEmail }">
+        <div
+          class="Alert-Message"
+          :class="{
+            'Display-None': checkEmail == 'none' || checkEmail == 'true'
+          }"
+        >
           Please enter a valid email
         </div>
       </div>

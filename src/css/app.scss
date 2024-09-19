@@ -187,6 +187,12 @@
 .Display-None {
   display: none;
 }
+.Input-green {
+  border: solid 1px greenyellow !important;
+}
+.Input-red {
+  border: solid 1px red !important;
+}
 .Text-Box {
   width: 500px;
   height: 50px;

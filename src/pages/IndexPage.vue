@@ -111,7 +111,7 @@ export default {
 
     const checkEmailRegex = () => {
       let pattern = new RegExp(
-        '^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$'
+        '^[a-zA-Z0-9+-\_.]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$'
       );
 
       checkEmail.value = pattern.test(email.value) ? 'true' : 'false';
@@ -223,7 +223,13 @@ export default {
         illo inventore.
       </div>
       <div class="Box-Word5">Subscribe to our newsletter</div>
-      <div class="Text-Box">
+      <div
+        class="Text-Box"
+        :class="{
+          'Input-green': checkEmail == 'true',
+          'Input-red': checkEmail == 'false'
+        }"
+      >
         <q-input
           v-model="email"
           @keyup.enter="checkEmailRegex"
@@ -234,7 +240,9 @@ export default {
             <q-icon
               name="send"
               @click="checkEmailRegex"
-              color="grey"
+              :color="
+                checkEmail == 'true' || checkEmail == 'none' ? 'white' : 'grey'
+              "
               class="cursor-pointer"
             />
           </template>

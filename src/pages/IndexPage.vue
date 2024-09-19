@@ -42,6 +42,7 @@ export default {
       { label: 'Oceania', value: 'Oceania' }
     ]);
     const email = ref('');
+    const year = ref(1000);
     const PlaceDetails = ref([
       {
         index: 1,
@@ -123,7 +124,8 @@ export default {
       PlaceDetails,
       location,
       locationOption,
-      email
+      email,
+      year
     };
   }
 };
@@ -205,19 +207,46 @@ export default {
         </div>
         <div class="Frame-2">
           <div class="Number-Align">
-            <q-btn round color="black" label="1000" />
+            <q-btn round color="black" label="1000" @click="year = 1000" />
           </div>
-          <div class="Countour"></div>
+          <div
+            :class="{ 'Non-Select-Countour': year < 1300 }"
+            class="Countour"
+          ></div>
           <div class="Number-Align">
-            <q-btn round color="black" label="1300" class="Non-Select-Round" />
+            <q-btn
+              round
+              color="black"
+              label="1300"
+              @click="year = 1300"
+              :class="{ 'Non-Select-Round': year < 1300 }"
+            />
           </div>
-          <div class="Countour"></div>
+          <div
+            :class="{ 'Non-Select-Countour': year < 1700 }"
+            class="Countour"
+          ></div>
           <div class="Number-Align">
-            <q-btn round color="black" label="1700" class="Non-Select-Round" />
+            <q-btn
+              round
+              color="black"
+              label="1700"
+              @click="year = 1700"
+              :class="{ 'Non-Select-Round': year < 1700 }"
+            />
           </div>
-          <div class="Countour"></div>
+          <div
+            :class="{ 'Non-Select-Countour': year < 2000 }"
+            class="Countour"
+          ></div>
           <div class="Number-Align">
-            <q-btn round color="black" label="2000" class="Non-Select-Round" />
+            <q-btn
+              round
+              color="black"
+              label="2000"
+              @click="year = 2000"
+              :class="{ 'Non-Select-Round': year < 2000 }"
+            />
           </div>
         </div>
       </div>

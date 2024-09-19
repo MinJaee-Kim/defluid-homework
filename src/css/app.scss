@@ -296,8 +296,9 @@
 }
 .Location-Box {
   width: 400px;
+  height: 440px;
   flex-grow: 0;
-  margin: 68px 40px 0 80px;
+  margin: 68px 0 0 80px;
   padding: 15px 20px 23px;
   border-radius: 10px;
   background-color: #d9d9d9;
@@ -307,7 +308,6 @@
   justify-content: space-between;
 }
 .Location-Title {
-  width: 79px;
   height: 20px;
   flex-grow: 0;
   font-family: Montserrat;
@@ -343,8 +343,6 @@
   border-radius: 5px;
 }
 .Location-Description {
-  width: 357px;
-  height: 101px;
   flex-grow: 0;
   margin: 19.9px 0 0 3px;
   font-family: Montserrat;
@@ -356,4 +354,9 @@
   letter-spacing: -0.21px;
   text-align: left;
   color: #000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
 }

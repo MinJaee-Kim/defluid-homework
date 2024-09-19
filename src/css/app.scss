@@ -184,7 +184,13 @@
   backdrop-filter: blur(10px);
   border: solid 1px #fff;
   background-color: rgba(255, 255, 255, 0.1);
+  font-family: Exo2;
+  font-size: 16px;
   align-items: center;
+}
+.q-field__native {
+  margin-left: 8px;
+  color: white;
 }
 .Section-2 {
   flex-grow: 0;
@@ -221,33 +227,9 @@
   border: solid 1px rgba(0, 0, 0, 0.5);
   background-color: #fff;
 }
-.Align-Location {
-  display: flex;
-  justify-content: center;
-  width: 64px;
-  height: 40px;
-  flex-grow: 0;
-  margin: 0 5px 0 0;
-  border-radius: 25px;
-  background-color: #000;
-}
 .AlignBox {
   display: flex;
   flex-direction: row;
-}
-.All {
-  flex-grow: 0;
-  margin: 0 5px 0 0;
-  font-family: Exo2;
-  font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: -0.24px;
-  text-align: center;
-  align-content: center;
-  color: #fff;
 }
 .Frame-2 {
   display: flex;
@@ -362,4 +344,19 @@
   display: -webkit-box;
   -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
+}
+button.q-btn.q-btn-item.non-selectable.no-outline {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.q-focus-helper {
+  border-radius: 25px;
+}
+.q-ripple {
+  border-radius: 25px;
+}
+button.q-btn.q-btn-item.non-selectable.no-outline.q-btn--flat.q-btn--rectangle.q-btn--rounded.text-white.q-btn--actionable.q-focusable.q-hoverable {
+  background-color: black;
 }

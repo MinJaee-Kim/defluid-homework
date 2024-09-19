@@ -33,6 +33,15 @@ export default {
           'Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor.'
       }
     ]);
+    const location = ref('All');
+    const locationOption = ref([
+      { label: 'All', value: 'All' },
+      { label: 'Asia', value: 'Asia' },
+      { label: 'Europe', value: 'Europe' },
+      { label: 'America', value: 'America' },
+      { label: 'Oceania', value: 'Oceania' }
+    ]);
+    const email = ref('');
     const PlaceDetails = ref([
       {
         index: 1,
@@ -111,7 +120,10 @@ export default {
     return {
       UserDetail,
       PhotoData,
-      PlaceDetails
+      PlaceDetails,
+      location,
+      locationOption,
+      email
     };
   }
 };
@@ -162,15 +174,34 @@ export default {
         illo inventore.
       </div>
       <div class="Box-Word5">Subscribe to our newsletter</div>
-      <div class="Text-Box"></div>
+      <q-input
+        class="Text-Box"
+        v-model="email"
+        placeholder="Enter User Email"
+        :dense="true"
+      >
+        <template v-slot:append>
+          <q-icon
+            name="send"
+            @click="email = ''"
+            color="white"
+            class="cursor-pointer"
+          />
+        </template>
+      </q-input>
     </div>
     <!-- 이미지 박스 -->
     <div class="Section-2">
       <div class="Word-2">Duis tincidunt ut ligula vitae mollis.</div>
       <div class="AlignBox">
         <div class="Frame-1">
-          <div class="Align-Location"><span class="All"> All </span></div>
-          <div class="Align-Location"><span class="All"> All </span></div>
+          <q-btn-toggle
+            v-model="location"
+            toggle-color="white"
+            flat
+            rounded
+            :options="locationOption"
+          />
         </div>
         <div class="Frame-2">
           <div class="Number-Align">

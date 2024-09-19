@@ -181,7 +181,8 @@ export default {
 <template>
   <div class="Screen">
     <div class="Title">
-      <span class="Word-1"> Snap photos and share like never before </span>
+      <div class="Word-1">Snap photos and share like</div>
+      <div class="Word-1">never before</div>
     </div>
     <!-- 머리 -->
     <div class="Section-1">

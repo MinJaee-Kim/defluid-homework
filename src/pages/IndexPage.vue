@@ -1,9 +1,6 @@
 <script lang="ts">
 import { ref } from 'vue';
 import { api } from 'boot/axios';
-// import { Todo, Meta } from 'components/models';
-// import ExampleComponent from 'components/ExampleComponent.vue';
-// import CardComponent from 'components/CardComponent.vue';
 
 export default {
   setup() {
@@ -276,15 +273,5 @@ export default {
         </div>
       </q-virtual-scroll>
     </q-scroll-area>
-
-    <!-- <img
-      src="../img/rectangle.png"
-      srcset="../img/rectangle@2x.png 2x, ../img/rectangle@3x.png 3x"
-      class="Rectangle"
-    /> -->
   </div>
-
-  <!-- <q-page class="row items-center justify-evenly">
-      <card-component lorem=""></card-component>
-    </q-page> -->
 </template>

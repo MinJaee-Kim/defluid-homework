@@ -205,11 +205,19 @@ export default {
         </div>
         <div class="Frame-2">
           <div class="Number-Align">
-            <div class="Number">1000</div>
+            <q-btn round color="black" label="1000" />
           </div>
           <div class="Countour"></div>
           <div class="Number-Align">
-            <div class="Number">1000</div>
+            <q-btn round color="black" label="1300" class="Non-Select-Round" />
+          </div>
+          <div class="Countour"></div>
+          <div class="Number-Align">
+            <q-btn round color="black" label="1700" class="Non-Select-Round" />
+          </div>
+          <div class="Countour"></div>
+          <div class="Number-Align">
+            <q-btn round color="black" label="2000" class="Non-Select-Round" />
           </div>
         </div>
       </div>

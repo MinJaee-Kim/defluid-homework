@@ -11,7 +11,7 @@ export default {
       {
         index: 1,
         image: 'src/img/ellipse.png',
-        srcset: 'img/ellipse@2x.png 2x, img/ellipse@3x.png 3x',
+        srcset: 'src/img/ellipse@2x.png 2x, src/img/ellipse@3x.png 3x',
         title: 'Sed ut perspiciatis',
         detail:
           'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.'
@@ -19,7 +19,7 @@ export default {
       {
         index: 2,
         image: 'src/img/ellipse2.png',
-        srcset: 'img/ellipse2@2x.png 2x, img/ellipse2@3x.png 3x',
+        srcset: 'src/img/ellipse2@2x.png 2x, src/img/ellipse2@3x.png 3x',
         title: 'Lorem ipsum dolor',
         detail:
           'Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.'
@@ -27,7 +27,7 @@ export default {
       {
         index: 3,
         image: 'src/img/ellipse3.png',
-        srcset: 'img/ellipse3@2x.png 2x, img/ellipse3@3x.png 3x',
+        srcset: 'src/img/ellipse3@2x.png 2x, src/img/ellipse3@3x.png 3x',
         title: 'Nemo enim ipsam',
         detail:
           'Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor.'
@@ -36,8 +36,8 @@ export default {
     const PlaceDetails = ref([
       {
         index: 1,
-        image: '../img/ellipse.png',
-        srcset: 'img/ellipse@2x.png 2x, img/ellipse@3x.png 3x',
+        image: 'src/img/image-italy.png',
+        srcset: 'src/img/image-italy@2x.png 2x, src/img/image-italy@3x.png 3x',
         title: 'Italy, Pica',
         year: 1173,
         detail:
@@ -45,8 +45,8 @@ export default {
       },
       {
         index: 2,
-        image: '../img/ellipse.png',
-        srcset: 'img/ellipse@2x.png 2x, img/ellipse@3x.png 3x',
+        image: 'src/img/image-spain.png',
+        srcset: 'src/img/image-spain@2x.png 2x, src/img/image-spain@3x.png 3x',
         title: 'Spain, Sagrada Família',
         year: 1882,
         detail:
@@ -54,8 +54,8 @@ export default {
       },
       {
         index: 3,
-        image: '../img/ellipse.png',
-        srcset: 'img/ellipse@2x.png 2x, img/ellipse@3x.png 3x',
+        image: 'src/img/image-us.png',
+        srcset: 'src/img/image-us@2x.png 2x, src/img/image-us@3x.png 3x',
         title: 'US, Fallingwater',
         year: 1935,
         detail:
@@ -63,8 +63,9 @@ export default {
       },
       {
         index: 4,
-        image: '../img/ellipse.png',
-        srcset: 'img/ellipse@2x.png 2x, img/ellipse@3x.png 3x',
+        image: 'src/img/image-russia.png',
+        srcset:
+          'src/img/image-russia@2x.png 2x, src/img/image-russia@3x.png 3x',
         title: "Russia, Saint Basil's Cathedral",
         year: 1561,
         detail:
@@ -196,8 +197,8 @@ export default {
               ><span class="Location-Value"> {{ item.year }} </span>
             </div>
             <img
-              src="../img/image.png"
-              srcset="img/image@2x.png 2x, img/image@3x.png 3x"
+              :src="item.image"
+              :srcset="item.srcset"
               class="Location-Image"
             />
             <span class="Location-Description">

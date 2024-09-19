@@ -39,6 +39,7 @@ export default {
       { label: 'Oceania', value: 'Oceania' }
     ]);
     const email = ref('');
+    const checkEmail = ref(true);
     const year = ref(1000);
     const PlaceDetails = ref([
       {
@@ -159,6 +160,7 @@ export default {
       location,
       locationOption,
       email,
+      checkEmail,
       year,
       alignCard,
       setYearAndAlignCard
@@ -212,21 +214,26 @@ export default {
         illo inventore.
       </div>
       <div class="Box-Word5">Subscribe to our newsletter</div>
-      <q-input
-        class="Text-Box"
-        v-model="email"
-        placeholder="Enter User Email"
-        :dense="true"
-      >
-        <template v-slot:append>
-          <q-icon
-            name="send"
-            @click="email = ''"
-            color="white"
-            class="cursor-pointer"
-          />
-        </template>
-      </q-input>
+      <div class="Text-Box">
+        <q-input
+          v-model="email"
+          @keyup.enter="email = ''"
+          placeholder="Enter User Email"
+          :dense="true"
+        >
+          <template v-slot:append>
+            <q-icon
+              name="send"
+              @click="email = ''"
+              color="grey"
+              class="cursor-pointer"
+            />
+          </template>
+        </q-input>
+        <div class="Alert-Message" :class="{ 'Display-None': checkEmail }">
+          Please enter a valid email
+        </div>
+      </div>
     </div>
     <!-- 이미지 박스 -->
     <div class="Section-2">
